@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Action Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/03ededf5ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menu_toggle"></div>
+        <div class="profile">
+            <div class="imgBx">
+                <img src="user.jpg" alt="profile image">
+            </div>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <span class="icons"><i class="fa-solid fa-user"></i></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons"><i class="fa-solid fa-comment"></i></span>
+                    <span class="text">Inbox</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons"><i class="fa-solid fa-gear"></i></span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons"><i class="fa-solid fa-circle-info"></i></span>
+                    <span class="text">Support</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icons"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const menu_toggle = document.querySelector(".menu_toggle");
+        const navigation = document.querySelector(".navigation");
+        menu_toggle.onclick = () => {
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
