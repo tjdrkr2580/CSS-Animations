@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #434750;
+  overflow: hidden;
+}
+
+.loader {
+  position: relative;
+  -webkit-transform: skewY(-15deg) translateX(50px) translateY(50px);
+          transform: skewY(-15deg) translateX(50px) translateY(50px);
+}
+
+.loader span {
+  -webkit-animation-duration: 125s/var(--i);
+          animation-duration: 125s/var(--i);
+  width: 200px;
+  height: 40px;
+  display: block;
+  background: #3e3f46;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.loader span:hover {
+  background: #33a3ee;
+  -webkit-transform: 0s;
+          transform: 0s;
+}
+
+.loader span:hover::before {
+  background: #1f5378;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.loader span::before {
+  background-color: #3e3f46;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 150px;
+  background: #2e3133;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  height: 100%;
+}
+
+@-webkit-keyframes animate {}
+
+@keyframes animate {}
+/*# sourceMappingURL=style.css.map */
