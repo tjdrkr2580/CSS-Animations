@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #111;
+  overflow: hidden;
+}
+
+.scene {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.scene .container {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+}
+
+.scene .container .box {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-15deg);
+          transform: rotateX(-15deg);
+}
+
+.scene .container .box .cube {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 500px;
+  height: 100px;
+  -webkit-transform: translate3d(-250px, -50px, 0) rotate(calc(60deg * var(--i)));
+          transform: translate3d(-250px, -50px, 0) rotate(calc(60deg * var(--i)));
+}
+
+.scene .container .box .cube .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.scene .container .box .cube .side:nth-child(1) {
+  -webkit-transform: rotateX(0deg) translate3d(0, 0, 100px);
+          transform: rotateX(0deg) translate3d(0, 0, 100px);
+  height: 100px;
+  background: #fefefe;
+}
+
+.scene .container .box .cube .side:nth-child(2) {
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 0px);
+          transform: rotateX(90deg) translate3d(0, 0, 0px);
+  height: 200px;
+  background: #fefefe;
+}
+
+.scene .container .box .cube .side:nth-child(3) {
+  -webkit-transform: rotateX(180deg) translate3d(0, 0, 100px);
+          transform: rotateX(180deg) translate3d(0, 0, 100px);
+  height: 100px;
+  background: #fefefe;
+}
+
+.scene .container .box .cube .side:nth-child(4) {
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 100px);
+          transform: rotateX(90deg) translate3d(0, 0, 100px);
+  height: 200px;
+  background: #fefefe;
+}
+
+.scene .container .box .cube .side:nth-child(5) {
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, 400px);
+          transform: rotateY(90deg) translate3d(0, 0, 400px);
+  height: 100px;
+  width: 200px;
+  background: #fff;
+}
+
+.scene .container .box .cube .side:nth-child(5) {
+  -webkit-transform: rotateY(270deg) translate3d(0, 0, 100px);
+          transform: rotateY(270deg) translate3d(0, 0, 100px);
+  height: 100px;
+  width: 200px;
+  background: #fff;
+}
+/*# sourceMappingURL=style.css.map */
