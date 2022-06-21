@@ -1,0 +1,27 @@
+* {
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #061e33;
+}
+
+div {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: yellow;
+}
+/*# sourceMappingURL=style.css.map */

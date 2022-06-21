@@ -1,0 +1,19 @@
+* {
+    list-style: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #061e33;
+}
+
+div {
+    transition: transform 1s;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: yellow;
+}
