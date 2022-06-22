@@ -10,15 +10,24 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: #061e33;
+html {
+  width: 100vw;
+  height: 100vh;
 }
 
-div {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #061e33;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   width: 80px;
   height: 80px;
   border-radius: 50%;

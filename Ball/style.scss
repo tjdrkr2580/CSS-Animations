@@ -6,12 +6,21 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #061e33;
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
-div {
-    transition: transform 1s;
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #061e33;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    transition: transform 0.5s;
     width: 80px;
     height: 80px;
     border-radius: 50%;
