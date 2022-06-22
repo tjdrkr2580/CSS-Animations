@@ -3,8 +3,8 @@ ball.style.left = "0px";
 ball.style.top = "0px";
 let sx = 10;
 let sy = 10;
-let width = window.innerWidth - (ball.offsetWidth/ 2);
-let height = window.innerHeight - (ball.offsetHeight / 2);
+let width = window.innerWidth - ball.offsetWidth;
+let height = window.innerHeight - ball.offsetHeight;
 
 const resize = () => {
     width = window.innerWidth - (ball.offsetWidth / 2);
