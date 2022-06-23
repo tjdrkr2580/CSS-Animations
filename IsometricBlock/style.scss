@@ -71,7 +71,7 @@ body {
 
 
         &::after {
-            filter: blur(40px);
+            filter: blur(20px);
             background: #35383e;
             transform: skewX(45deg);
             top: -150px;
@@ -91,7 +91,7 @@ body {
         filter: hue-rotate(0deg)
     }
     100% {
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(180deg);
     }
 }
 

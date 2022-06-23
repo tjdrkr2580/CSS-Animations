@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="text">Circle-Text-Animation</h2>
+    </div>
+    <script>
+        const text = document.querySelector('#text');
+        text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+        const ele = document.querySelectorAll("span");
+        for(var i = 1; i < ele.length; i++){
+            ele[i].style.transform = "rotate("+i*16.5+"deg)";
+        }
+    </script>
+</body>
+</html>

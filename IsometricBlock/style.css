@@ -94,8 +94,8 @@ body {
 }
 
 .loader span::after {
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   background: #35383e;
   -webkit-transform: skewX(45deg);
           transform: skewX(45deg);
@@ -115,8 +115,8 @@ body {
             filter: hue-rotate(0deg);
   }
   100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
   }
 }
 
@@ -126,8 +126,8 @@ body {
             filter: hue-rotate(0deg);
   }
   100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
   }
 }
 
