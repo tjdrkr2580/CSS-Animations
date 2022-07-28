@@ -13,6 +13,16 @@ body {
     background: #222;
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background : linear-gradient(#08ff12, #0791ff);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
 .circle {
     display: flex;
     position: relative;
@@ -25,11 +35,38 @@ body {
     box-shadow: 0 0 0 2px #fff5, 0 0 0 20px #333, 0 0 0 22px #fff, 0 0 50px #fff, 0 0 450px #fff;
 }
 
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 130px;
+    background: linear-gradient(0deg,transparent,#fff);
+    border-radius: 2px;
+    transform-origin: bottom;
+    animation: animateNiddles 120s steps(60) infinite
+}
+
 .circle::before {
     content: '';
     position: absolute;
     width: 2px;
     height: 170px;
-    background: linear-gradient(0deg, trasparent,#fff);
+    background: linear-gradient(0deg,transparent,#fff);
     border-radius: 2px;
+    transform-origin: bottom;
+    animation: animateNiddles 20s steps(60) infinite
+}
+
+li {
+    list-style: none;
+}
+
+@keyframes animateNiddles {
+    0% {
+        transform: translate(-50%,-50%)rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    
 }
